@@ -1,0 +1,77 @@
+www.quandl.com
+ff3
+
+2008
+2011？
+2020
+
+
+before after
+long 200days
+short 45-60days
+90-120 days
+
+
+
+
+target Beta(max ret) - market risk mesure
+
+sp500 - global market
+input cov matix;expected ret-alpha model
+
+performance,
+volatility,
+skewness, 
+Var/Cvar,
+risk to performance ratios.
+
+investment universe:
+world global economy - ETFs
+factor model:
+French-Fama 3-factor-model (www.quandl.com)
+periods: before, during and after
+target return = 15%, c.s. beta = 
+
+library(PerformanceAnalytics)
+library(RQuantLib)
+library(tseries)
+library(ggplot2)
+library(RQuantLib)
+library(quantmod)
+modification:
+rolling/prediction/
+
+
+1.
+nyu classes  hw2,
+what is his expectation？
+do you happen to have/
+do you know anyone who has taken this class before
+reference
+fransisco
+--------------
+5 years
+
+why do you 
+
+----------------------------
+function(x) 
+
+(x/100+1)^(1/365)-1
+---------------------------
+3rd
+
+job consideration is always there.
+I have a few experience on systemic risk.
+
+Risk
+fall internship as
+
+data science - develope a risk assessment tool for 
+my expectation from
+ 
+x matrix(1:9,3,3)
+y c(1,2,3)
+x*y
+
+
