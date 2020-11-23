@@ -227,14 +227,14 @@ inter_face <- shiny::pageWithSidebar(
                 choices = c("Target Return", "Target Beta")),
     
     selectInput("Crisis", "Choose a crisis date:", 
-                choices = c("2008-09-16", "2010-04-28","2014-12-01","2015-06-12")),
+                choices = c("2008-09-16", "2010-04-28","2014-12-01")),
     
     column(width=12, sliderInput("Term", label="Time window:",
                                  min=30, max=100, value=60, step=10)),
     column(width=12, sliderInput("TargetRet", label="Target Return:",
                                  min=0.0, max=0.5, value=0.15, step=0.05)),
     column(width=12, sliderInput("Beta", label="Target Beta:",
-                                 min=0, max=2, value=1, step=0.5)),
+                                 min=-1, max=2, value=1, step=0.5)),
     
     helpText("Note: The data unit is percentage(%)."),
     
@@ -280,7 +280,7 @@ ser_ver <-function(input, output) {
     rownames(da_ta) <- c("Before_crisis","In_Crisis","After_Crisis")
     da_ta
     
-  },colnames = TRUE,rownames = TRUE)
+  },colnames = TRUE,rownames = TRUE, digits = 3)
   
   output$Aft_c <- renderPlot({
     barplot(datasetInput()[[1]]$Aft_c, names.arg = Inv_universe)
@@ -301,7 +301,7 @@ ser_ver <-function(input, output) {
     out <- as.matrix(t(datasetInput()[[2]]))
     colnames(out) <- c("Before Crisis","In Crisis","After Crisis")
     out
-  },rownames = TRUE,colnames = TRUE)
+  },rownames = TRUE,colnames = TRUE, digits = 3)
   
 }
 
